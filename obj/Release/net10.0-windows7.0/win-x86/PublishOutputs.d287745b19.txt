@@ -1,7 +1,0 @@
-C:\Users\agezn\Desktop\Shizudash\Suzumetry.pdb
-C:\Users\agezn\Desktop\Shizudash\D3DCompiler_47_cor3.dll
-C:\Users\agezn\Desktop\Shizudash\PenImc_cor3.dll
-C:\Users\agezn\Desktop\Shizudash\PresentationNative_cor3.dll
-C:\Users\agezn\Desktop\Shizudash\vcruntime140_cor3.dll
-C:\Users\agezn\Desktop\Shizudash\wpfgfx_cor3.dll
-C:\Users\agezn\Desktop\Shizudash\Suzumetry.exe
