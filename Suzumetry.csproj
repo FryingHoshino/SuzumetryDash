@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net10.0-windows7.0</TargetFramework>
     <UseWPF>true</UseWPF>
     <Nullable>enable</Nullable>
     <ImplicitUsings>disable</ImplicitUsings>
@@ -11,11 +11,19 @@
     <ConcurrentGarbageCollection>false</ConcurrentGarbageCollection>
     <TieredPGO>true</TieredPGO>
     <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <Version>0.1.5</Version>
+    <Authors>FryingHoshino</Authors>
+    <PackageIcon>icon.ico</PackageIcon>
+    <RepositoryUrl>https://github.com/FryingHoshino/SuzumetryDash/</RepositoryUrl>
+    <ApplicationIcon>Assets\icon.ico</ApplicationIcon>
+    <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Assets\author.png" />
     <None Remove="Assets\chibi.gif" />
-    <None Remove="Assets\icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\icon.ico" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Web\index.html" LogicalName="index.html" />
@@ -30,5 +38,11 @@
     <Resource Include="Assets\icon.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Assets\icon.ico">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 </Project>

@@ -3,20 +3,88 @@
   "WorkspaceRootPath": "H:\\Repos\\Suzumetry\\Suzumetry\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|h:\\repos\\suzumetry\\suzumetry\\core\\native.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|solutionrelative:core\\native.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|h:\\repos\\suzumetry\\suzumetry\\core\\inputdevices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|solutionrelative:core\\inputdevices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|h:\\repos\\suzumetry\\suzumetry\\core\\hub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|solutionrelative:core\\hub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|h:\\repos\\suzumetry\\suzumetry\\suzumetry.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|solutionrelative:suzumetry.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|h:\\repos\\suzumetry\\suzumetry\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|h:\\repos\\suzumetry\\suzumetry\\core\\axisinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|solutionrelative:core\\axisinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|h:\\repos\\suzumetry\\suzumetry\\core\\coordview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|solutionrelative:core\\coordview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|h:\\repos\\suzumetry\\suzumetry\\core\\dr2reader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|solutionrelative:core\\dr2reader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|h:\\repos\\suzumetry\\suzumetry\\core\\pacer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|solutionrelative:core\\pacer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|h:\\repos\\suzumetry\\suzumetry\\core\\padmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|solutionrelative:core\\padmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|h:\\repos\\suzumetry\\suzumetry\\core\\presets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|solutionrelative:core\\presets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|h:\\repos\\suzumetry\\suzumetry\\core\\rawmouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|solutionrelative:core\\rawmouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|h:\\repos\\suzumetry\\suzumetry\\core\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|solutionrelative:core\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|h:\\repos\\suzumetry\\suzumetry\\core\\snap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|solutionrelative:core\\snap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|h:\\repos\\suzumetry\\suzumetry\\core\\util.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|solutionrelative:core\\util.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|h:\\repos\\suzumetry\\suzumetry\\core\\stages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|solutionrelative:core\\stages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|h:\\repos\\suzumetry\\suzumetry\\web\\index.html||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|solutionrelative:web\\index.html||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|h:\\repos\\suzumetry\\suzumetry\\net\\webserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|solutionrelative:net\\webserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|h:\\repos\\suzumetry\\suzumetry\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|h:\\repos\\suzumetry\\suzumetry\\net\\framejson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|solutionrelative:net\\framejson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|h:\\repos\\suzumetry\\suzumetry\\presetwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|solutionrelative:presetwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|h:\\repos\\suzumetry\\suzumetry\\padstyle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|solutionrelative:padstyle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|h:\\repos\\suzumetry\\suzumetry\\padsettingswindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|solutionrelative:padsettingswindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|h:\\repos\\suzumetry\\suzumetry\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,18 +93,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|h:\\repos\\suzumetry\\suzumetry\\core\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|solutionrelative:core\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|h:\\repos\\suzumetry\\suzumetry\\hudwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|solutionrelative:hudwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|h:\\repos\\suzumetry\\suzumetry\\core\\hub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|solutionrelative:core\\hub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|h:\\repos\\suzumetry\\suzumetry\\core\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35BB9241-2314-505B-7367-227A06997C9D}|Suzumetry.csproj|solutionrelative:core\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,66 +102,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "index.html",
-              "DocumentMoniker": "H:\\Repos\\Suzumetry\\Suzumetry\\Web\\index.html",
-              "RelativeDocumentMoniker": "Web\\index.html",
-              "ToolTip": "H:\\Repos\\Suzumetry\\Suzumetry\\Web\\index.html",
-              "RelativeToolTip": "Web\\index.html",
-              "ViewState": "AgIAAI8AAAAAAAAAAAAiwLYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-10-23T21:34:29.525Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WebServer.cs",
-              "DocumentMoniker": "H:\\Repos\\Suzumetry\\Suzumetry\\Net\\WebServer.cs",
-              "RelativeDocumentMoniker": "Net\\WebServer.cs",
-              "ToolTip": "H:\\Repos\\Suzumetry\\Suzumetry\\Net\\WebServer.cs",
-              "RelativeToolTip": "Net\\WebServer.cs",
-              "ViewState": "AgIAADgBAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Title": "InputDevices.cs",
+              "DocumentMoniker": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\InputDevices.cs",
+              "RelativeDocumentMoniker": "Core\\InputDevices.cs",
+              "ToolTip": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\InputDevices.cs",
+              "RelativeToolTip": "Core\\InputDevices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-23T21:33:34.667Z",
+              "WhenOpened": "2026-10-25T23:24:53.42Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FrameJson.cs",
-              "DocumentMoniker": "H:\\Repos\\Suzumetry\\Suzumetry\\Net\\FrameJson.cs",
-              "RelativeDocumentMoniker": "Net\\FrameJson.cs",
-              "ToolTip": "H:\\Repos\\Suzumetry\\Suzumetry\\Net\\FrameJson.cs",
-              "RelativeToolTip": "Net\\FrameJson.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "Title": "Suzumetry",
+              "DocumentMoniker": "H:\\Repos\\Suzumetry\\Suzumetry\\Suzumetry.csproj",
+              "RelativeDocumentMoniker": "Suzumetry.csproj",
+              "ToolTip": "H:\\Repos\\Suzumetry\\Suzumetry\\Suzumetry.csproj",
+              "RelativeToolTip": "Suzumetry.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-25T23:13:56.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AxisInput.cs",
+              "DocumentMoniker": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\AxisInput.cs",
+              "RelativeDocumentMoniker": "Core\\AxisInput.cs",
+              "ToolTip": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\AxisInput.cs",
+              "RelativeToolTip": "Core\\AxisInput.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-23T21:33:27.795Z",
+              "WhenOpened": "2026-10-25T23:10:28.555Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "HudWindow.xaml",
-              "DocumentMoniker": "H:\\Repos\\Suzumetry\\Suzumetry\\HudWindow.xaml",
-              "RelativeDocumentMoniker": "HudWindow.xaml",
-              "ToolTip": "H:\\Repos\\Suzumetry\\Suzumetry\\HudWindow.xaml",
-              "RelativeToolTip": "HudWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-23T21:24:15.383Z",
+              "Title": "CoordView.cs",
+              "DocumentMoniker": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\CoordView.cs",
+              "RelativeDocumentMoniker": "Core\\CoordView.cs",
+              "ToolTip": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\CoordView.cs",
+              "RelativeToolTip": "Core\\CoordView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T23:10:27.749Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "Hub.cs",
               "DocumentMoniker": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\Hub.cs",
               "RelativeDocumentMoniker": "Core\\Hub.cs",
@@ -113,58 +165,240 @@
               "RelativeToolTip": "Core\\Hub.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-23T21:24:12.14Z",
+              "WhenOpened": "2026-10-25T23:10:24.133Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Author.cs",
-              "DocumentMoniker": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\Author.cs",
-              "RelativeDocumentMoniker": "Core\\Author.cs",
-              "ToolTip": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\Author.cs",
-              "RelativeToolTip": "Core\\Author.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAIwAkAAABiAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "Dr2Reader.cs",
+              "DocumentMoniker": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\Dr2Reader.cs",
+              "RelativeDocumentMoniker": "Core\\Dr2Reader.cs",
+              "ToolTip": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\Dr2Reader.cs",
+              "RelativeToolTip": "Core\\Dr2Reader.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-23T20:53:39.681Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Settings.cs",
-              "DocumentMoniker": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\Settings.cs",
-              "RelativeDocumentMoniker": "Core\\Settings.cs",
-              "ToolTip": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\Settings.cs",
-              "RelativeToolTip": "Core\\Settings.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-23T20:19:29.174Z",
+              "WhenOpened": "2026-10-25T23:10:20.377Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Native.cs",
+              "DocumentMoniker": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\Native.cs",
+              "RelativeDocumentMoniker": "Core\\Native.cs",
+              "ToolTip": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\Native.cs",
+              "RelativeToolTip": "Core\\Native.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T23:10:17.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Pacer.cs",
+              "DocumentMoniker": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\Pacer.cs",
+              "RelativeDocumentMoniker": "Core\\Pacer.cs",
+              "ToolTip": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\Pacer.cs",
+              "RelativeToolTip": "Core\\Pacer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T23:10:16.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PadModel.cs",
+              "DocumentMoniker": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\PadModel.cs",
+              "RelativeDocumentMoniker": "Core\\PadModel.cs",
+              "ToolTip": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\PadModel.cs",
+              "RelativeToolTip": "Core\\PadModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T23:10:14.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Presets.cs",
+              "DocumentMoniker": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\Presets.cs",
+              "RelativeDocumentMoniker": "Core\\Presets.cs",
+              "ToolTip": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\Presets.cs",
+              "RelativeToolTip": "Core\\Presets.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T23:10:13.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Snap.cs",
+              "DocumentMoniker": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\Snap.cs",
+              "RelativeDocumentMoniker": "Core\\Snap.cs",
+              "ToolTip": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\Snap.cs",
+              "RelativeToolTip": "Core\\Snap.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T23:10:03.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Util.cs",
+              "DocumentMoniker": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\Util.cs",
+              "RelativeDocumentMoniker": "Core\\Util.cs",
+              "ToolTip": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\Util.cs",
+              "RelativeToolTip": "Core\\Util.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T23:10:01.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Stages.cs",
+              "DocumentMoniker": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\Stages.cs",
+              "RelativeDocumentMoniker": "Core\\Stages.cs",
+              "ToolTip": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\Stages.cs",
+              "RelativeToolTip": "Core\\Stages.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T23:09:59.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "H:\\Repos\\Suzumetry\\Suzumetry\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
               "ToolTip": "H:\\Repos\\Suzumetry\\Suzumetry\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-23T20:10:25.293Z",
+              "WhenOpened": "2026-10-25T20:11:26.379Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 17,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "H:\\Repos\\Suzumetry\\Suzumetry\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "AssemblyInfo.cs",
+              "ToolTip": "H:\\Repos\\Suzumetry\\Suzumetry\\AssemblyInfo.cs",
+              "RelativeToolTip": "AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T23:09:50.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PresetWindow.cs",
+              "DocumentMoniker": "H:\\Repos\\Suzumetry\\Suzumetry\\PresetWindow.cs",
+              "RelativeDocumentMoniker": "PresetWindow.cs",
+              "ToolTip": "H:\\Repos\\Suzumetry\\Suzumetry\\PresetWindow.cs",
+              "RelativeToolTip": "PresetWindow.cs",
+              "ViewState": "AgIAAMsAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T23:09:39.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PadStyle.cs",
+              "DocumentMoniker": "H:\\Repos\\Suzumetry\\Suzumetry\\PadStyle.cs",
+              "RelativeDocumentMoniker": "PadStyle.cs",
+              "ToolTip": "H:\\Repos\\Suzumetry\\Suzumetry\\PadStyle.cs",
+              "RelativeToolTip": "PadStyle.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T23:09:37.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PadSettingsWindow.cs",
+              "DocumentMoniker": "H:\\Repos\\Suzumetry\\Suzumetry\\PadSettingsWindow.cs",
+              "RelativeDocumentMoniker": "PadSettingsWindow.cs",
+              "ToolTip": "H:\\Repos\\Suzumetry\\Suzumetry\\PadSettingsWindow.cs",
+              "RelativeToolTip": "PadSettingsWindow.cs",
+              "ViewState": "AgIAAHgBAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T23:09:29.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Settings.cs",
+              "DocumentMoniker": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\Settings.cs",
+              "RelativeDocumentMoniker": "Core\\Settings.cs",
+              "ToolTip": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\Settings.cs",
+              "RelativeToolTip": "Core\\Settings.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAAIEBAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T20:51:01.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RawMouse.cs",
+              "DocumentMoniker": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\RawMouse.cs",
+              "RelativeDocumentMoniker": "Core\\RawMouse.cs",
+              "ToolTip": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\RawMouse.cs",
+              "RelativeToolTip": "Core\\RawMouse.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAcwIEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T20:49:31.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "index.html",
+              "DocumentMoniker": "H:\\Repos\\Suzumetry\\Suzumetry\\Web\\index.html",
+              "RelativeDocumentMoniker": "Web\\index.html",
+              "ToolTip": "H:\\Repos\\Suzumetry\\Suzumetry\\Web\\index.html",
+              "RelativeToolTip": "Web\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-10-25T20:23:10.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Author.cs",
+              "DocumentMoniker": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\Author.cs",
+              "RelativeDocumentMoniker": "Core\\Author.cs",
+              "ToolTip": "H:\\Repos\\Suzumetry\\Suzumetry\\Core\\Author.cs",
+              "RelativeToolTip": "Core\\Author.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T20:13:26.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "H:\\Repos\\Suzumetry\\Suzumetry\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "H:\\Repos\\Suzumetry\\Suzumetry\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAIAAAAAAAAAAAAAUwPwAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAE0BAAAAAAAAAAAkwF4BAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-23T20:10:25.191Z",
+              "WhenOpened": "2026-10-25T20:12:33.397Z",
               "EditorCaption": ""
             }
           ]

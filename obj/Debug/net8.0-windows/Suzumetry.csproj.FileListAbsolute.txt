@@ -20,3 +20,4 @@ H:\Repos\Suzumetry\Suzumetry\obj\Debug\net8.0-windows\refint\Suzumetry.dll
 H:\Repos\Suzumetry\Suzumetry\obj\Debug\net8.0-windows\Suzumetry.pdb
 H:\Repos\Suzumetry\Suzumetry\obj\Debug\net8.0-windows\Suzumetry.genruntimeconfig.cache
 H:\Repos\Suzumetry\Suzumetry\obj\Debug\net8.0-windows\ref\Suzumetry.dll
+H:\Repos\Suzumetry\Suzumetry\obj\Debug\net8.0-windows\Suzumetry.sourcelink.json

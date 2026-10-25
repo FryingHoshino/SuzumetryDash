@@ -17,6 +17,11 @@ public partial class MainWindow : Window
     readonly Hub hub;
     readonly WebServer web;
     readonly HudWindow hud;
+    readonly PadModel pad;
+    PadSettingsWindow? padWin;
+    HudSettingsWindow? hudWin;
+    PresetWindow? presetWin;
+    Game autoGame = Game.None;
     readonly DispatcherTimer ui;
     readonly DispatcherTimer saveTimer;
     readonly TextBlock[] tyreBlocks;
@@ -33,7 +38,8 @@ public partial class MainWindow : Window
         st = Settings.Load();
         hub = new Hub(st);
         web = new WebServer(hub);
-        hud = new HudWindow(hub, st);
+        pad = new PadModel(st);
+        hud = new HudWindow(hub, st, pad);
         tyreBlocks = new[] { Tyre0, Tyre1, Tyre2, Tyre3 };
 
         ReadSlider.Value = st.ReadHz;
@@ -41,6 +47,7 @@ public partial class MainWindow : Window
         GameCombo.SelectedIndex = st.ForceGame;
         PortBox.Text = st.Port.ToString();
         Dr2PortBox.Text = st.Dr2Port.ToString();
+        Dr2FwdBox.Text = st.Dr2ForwardPort.ToString();
         HudCheck.IsChecked = st.HudEnabled;
         HudLockCheck.IsChecked = false;
         ScaleSlider.Value = st.HudScale;
@@ -49,6 +56,13 @@ public partial class MainWindow : Window
         ChkTyres.IsChecked = st.HudTyres;
         ChkLaps.IsChecked = st.HudLaps;
         ChkFuel.IsChecked = st.HudFuel;
+        ChkPos.IsChecked = st.HudPos;
+        ChkHeader.IsChecked = st.HudHeader;
+        ChkProg.IsChecked = st.HudProgress;
+        ChkG.IsChecked = st.HudGForce;
+        ChkSteer.IsChecked = st.HudSteer;
+        ChkWeather.IsChecked = st.HudWeather;
+        ChkMph.IsChecked = st.HudMph;
         ReadLabel.Text = "Read rate: " + st.ReadHz + " Hz";
         StreamLabel.Text = "Stream rate: " + st.StreamHz + " Hz";
 
@@ -74,7 +88,7 @@ public partial class MainWindow : Window
         };
         ScaleSlider.ValueChanged += (_, _) => ApplyHud();
         OpacitySlider.ValueChanged += (_, _) => ApplyHud();
-        foreach (var c in new[] { HudCheck, HudLockCheck, ChkPedals, ChkTyres, ChkLaps, ChkFuel })
+        foreach (var c in new[] { HudCheck, HudLockCheck, ChkPedals, ChkTyres, ChkLaps, ChkFuel, ChkPos, ChkHeader, ChkProg, ChkG, ChkSteer, ChkWeather, ChkMph })
         {
             c.Checked += (_, _) => ApplyHud();
             c.Unchecked += (_, _) => ApplyHud();
@@ -100,6 +114,15 @@ public partial class MainWindow : Window
             }
             else Dr2PortBox.Text = st.Dr2Port.ToString();
         };
+        Dr2FwdBox.LostFocus += (_, _) =>
+        {
+            if (int.TryParse(Dr2FwdBox.Text, out var p) && p >= 0 && p <= 65535)
+            {
+                st.Dr2ForwardPort = p;
+                Touch();
+            }
+            else Dr2FwdBox.Text = st.Dr2ForwardPort.ToString();
+        };
         Dr2Btn.Click += (_, _) =>
         {
             if (int.TryParse(Dr2PortBox.Text, out var p) && p >= 1024 && p <= 65535) st.Dr2Port = p;
@@ -107,7 +130,7 @@ public partial class MainWindow : Window
         };
         FwBtn.Click += (_, _) => OpenFirewall();
         LoadAuthor();
-        AuthorBtn.Click += (_, _) => ShowAuthor();
+        AuthorLink.MouseLeftButtonUp += (_, _) => ShowAuthor();
         ContentRendered += (_, _) => ShowAuthor();
         AuthorLayer.MouseLeftButtonDown += (_, _) => HideAuthor();
         UrlList.SelectionChanged += (_, _) =>
@@ -133,7 +156,115 @@ public partial class MainWindow : Window
         hud.ApplySettings();
         if (st.HudEnabled) hud.Show();
         ui.Start();
+        AddPadControls();
         ready = true;
+    }
+
+    void AddPadControls()
+    {
+        if (ChkMph.Parent is not Panel host) return;
+        int i = host.Children.IndexOf(ChkMph) + 1;
+        var padCheck = new CheckBox { Content = "Mouse pad (raw input)", IsChecked = st.HudPad, Margin = new Thickness(0, 10, 0, 0) };
+        RoutedEventHandler pc = (_, _) =>
+        {
+            st.HudPad = padCheck.IsChecked == true;
+            hud.ApplySettings();
+            Touch();
+        };
+        padCheck.Checked += pc;
+        padCheck.Unchecked += pc;
+        var fpsLabel = new TextBlock { Style = (Style)FindResource("Dim"), Margin = new Thickness(0, 10, 0, 0), Text = "HUD refresh: " + st.HudFps + " FPS" };
+        var fps = new Slider { Minimum = 10, Maximum = 240, TickFrequency = 5, IsSnapToTickEnabled = true, Value = st.HudFps };
+        fps.ValueChanged += (_, e) =>
+        {
+            st.HudFps = (int)e.NewValue;
+            fpsLabel.Text = "HUD refresh: " + st.HudFps + " FPS";
+            hud.ApplySettings();
+            Touch();
+        };
+        var open = new Button { Content = "Mouse pad settings...", HorizontalAlignment = HorizontalAlignment.Left, Margin = new Thickness(0, 10, 0, 0) };
+        open.Click += (_, _) => OpenPadSettings();
+        host.Children.Insert(i, padCheck);
+        host.Children.Insert(i + 1, fpsLabel);
+        host.Children.Insert(i + 2, fps);
+        host.Children.Insert(i + 3, open);
+        var hudStyle = new Button { Content = "Main HUD style and data...", HorizontalAlignment = HorizontalAlignment.Left, Margin = new Thickness(0, 10, 0, 0) };
+        hudStyle.Click += (_, _) => OpenHudSettings();
+        host.Children.Insert(i, hudStyle);
+        var presetBtn = new Button { Content = "Presets...", HorizontalAlignment = HorizontalAlignment.Left, Margin = new Thickness(0, 10, 0, 0) };
+        presetBtn.Click += (_, _) => OpenPresets();
+        host.Children.Insert(i + 1, presetBtn);
+    }
+
+    void OpenPresets()
+    {
+        if (presetWin != null)
+        {
+            presetWin.Activate();
+            return;
+        }
+        presetWin = new PresetWindow(st, PresetApplied, Touch) { Owner = this };
+        presetWin.Closed += (_, _) => presetWin = null;
+        presetWin.Show();
+    }
+
+    void PresetApplied()
+    {
+        hud.ApplySettings();
+        padWin?.Reload();
+        hudWin?.Reload();
+        Touch();
+    }
+
+    void AutoPreset()
+    {
+        if (!st.PresetAuto)
+        {
+            autoGame = Game.None;
+            return;
+        }
+        var g = hub.Game;
+        if (g == autoGame) return;
+        autoGame = g;
+        if (g == Game.None) return;
+        if (st.PresetMap.TryGetValue(g.ToString(), out var name) && Presets.Load(st, name)) PresetApplied();
+    }
+
+    void OpenHudSettings()
+    {
+        if (hudWin != null)
+        {
+            hudWin.Activate();
+            return;
+        }
+        hud.SetPreview(true);
+        hudWin = new HudSettingsWindow(st, () =>
+        {
+            hud.ApplySettings();
+            Touch();
+        }, m => hud.PreviewMode = m) { Owner = this };
+        hudWin.Closed += (_, _) =>
+        {
+            hudWin = null;
+            hud.SetPreview(false);
+        };
+        hudWin.Show();
+    }
+
+    void OpenPadSettings()
+    {
+        if (padWin != null)
+        {
+            padWin.Activate();
+            return;
+        }
+        padWin = new PadSettingsWindow(st, pad, () =>
+        {
+            hud.ApplySettings();
+            Touch();
+        }, () => hub.Active ? hub.Current : null) { Owner = this };
+        padWin.Closed += (_, _) => padWin = null;
+        padWin.Show();
     }
 
     void Touch()
@@ -154,6 +285,13 @@ public partial class MainWindow : Window
         st.HudTyres = ChkTyres.IsChecked == true;
         st.HudLaps = ChkLaps.IsChecked == true;
         st.HudFuel = ChkFuel.IsChecked == true;
+        st.HudPos = ChkPos.IsChecked == true;
+        st.HudHeader = ChkHeader.IsChecked == true;
+        st.HudProgress = ChkProg.IsChecked == true;
+        st.HudGForce = ChkG.IsChecked == true;
+        st.HudSteer = ChkSteer.IsChecked == true;
+        st.HudWeather = ChkWeather.IsChecked == true;
+        st.HudMph = ChkMph.IsChecked == true;
         hud.ApplySettings();
         hud.SetLocked(HudLockCheck.IsChecked != true);
         if (st.HudEnabled)
@@ -190,6 +328,7 @@ public partial class MainWindow : Window
         src?.AddHook(Hook);
         Native.RegisterHotKey(h, 1, 0x4003, 0x48);
         Native.RegisterHotKey(h, 2, 0x4003, 0x4C);
+        Native.RegisterHotKey(h, 3, 0x4003, 0x52);
     }
 
     IntPtr Hook(IntPtr h, int msg, IntPtr w, IntPtr l, ref bool handled)
@@ -199,6 +338,7 @@ public partial class MainWindow : Window
             int id = w.ToInt32();
             if (id == 1) HudCheck.IsChecked = HudCheck.IsChecked != true;
             else if (id == 2) HudLockCheck.IsChecked = HudLockCheck.IsChecked != true;
+            else if (id == 3) pad.Reset();
             handled = true;
         }
         return IntPtr.Zero;
@@ -237,7 +377,7 @@ public partial class MainWindow : Window
         authorState = 1;
         AuthorLayer.Visibility = Visibility.Visible;
         var ease = new CubicEase { EasingMode = EasingMode.EaseOut };
-        var d = TimeSpan.FromMilliseconds(200);
+        var d = TimeSpan.FromMilliseconds(380);
         AuthorShade.BeginAnimation(OpacityProperty, new DoubleAnimation(0, 1, TimeSpan.FromMilliseconds(240)));
         AuthorCard.BeginAnimation(OpacityProperty, new DoubleAnimation(0, 1, d) { EasingFunction = ease });
         CardMove.BeginAnimation(TranslateTransform.YProperty, new DoubleAnimation(30, 0, d) { EasingFunction = ease });
@@ -251,7 +391,7 @@ public partial class MainWindow : Window
         authorState = 2;
         authorTimer?.Stop();
         var ease = new CubicEase { EasingMode = EasingMode.EaseIn };
-        var d = TimeSpan.FromMilliseconds(200);
+        var d = TimeSpan.FromMilliseconds(220);
         AuthorShade.BeginAnimation(OpacityProperty, new DoubleAnimation(1, 0, d));
         AuthorCard.BeginAnimation(OpacityProperty, new DoubleAnimation(1, 0, d) { EasingFunction = ease });
         var up = new DoubleAnimation(0, -44, d) { EasingFunction = ease };
@@ -277,12 +417,15 @@ public partial class MainWindow : Window
 
     void Tick(object? s, EventArgs e)
     {
+        AutoPreset();
         ServerText.Text = web.Error != null ? "Server error: " + web.Error : web.Running ? "Server online on port " + st.Port : "Server offline";
         ClientsText.Text = "Connected devices: " + web.Clients;
         var f = hub.Current;
         if (f == null || !hub.Active)
         {
-            GameText.Text = hub.Game == Game.None ? "Waiting for game" : hub.Game + " · no data";
+            GameText.Text = hub.Game == Game.None ? "Waiting for game"
+                : hub.Game == Game.DR2 && Dr2Reader.LastError != null ? "DR2 · " + Dr2Reader.LastError
+                : hub.Game + " · no data";
             SetWaiting(true);
             return;
         }
@@ -313,8 +456,13 @@ public partial class MainWindow : Window
         var h = new WindowInteropHelper(this).Handle;
         Native.UnregisterHotKey(h, 1);
         Native.UnregisterHotKey(h, 2);
+        Native.UnregisterHotKey(h, 3);
+        padWin?.Close();
+        hudWin?.Close();
+        presetWin?.Close();
         st.Save();
         hud.Shutdown();
+        pad.Dispose();
         web.Dispose();
         hub.Dispose();
         base.OnClosed(e);

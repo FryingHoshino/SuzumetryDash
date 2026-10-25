@@ -244,7 +244,7 @@ namespace Suzumetry {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Suzumetry;component/hudwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Suzumetry;V0.1.1.0;component/hudwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\HudWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

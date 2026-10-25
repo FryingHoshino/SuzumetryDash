@@ -1,4 +1,5 @@
 using System.Windows;
+using System.Windows.Media.Animation;
 using Suzumetry.Core;
 
 namespace Suzumetry;
@@ -16,6 +17,11 @@ public partial class App : Application
             return;
         }
         base.OnStartup(e);
+        try
+        {
+            Timeline.DesiredFrameRateProperty.OverrideMetadata(typeof(Timeline), new FrameworkPropertyMetadata(240));
+        }
+        catch { }
         DispatcherUnhandledException += (_, a) =>
         {
             Log.Write(a.Exception);
