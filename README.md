@@ -18,7 +18,8 @@ Suzumetry shows basic telemetry from **DiRT Rally 2.0**, **Assetto Corsa** and *
 ## Preview
 
 <div align="center">
-<img width="568" alt="HUD overlay with mouse pad" src="https://github.com/user-attachments/assets/64cf8965-faa8-41c9-8e75-e8cf6d55b618" />
+<img width="734" height="405" alt="image" src="https://github.com/user-attachments/assets/b3440b9d-60e4-4619-8f7b-b69515d5a913" />
+
 <br/><br/>
 <img width="1012" height="666" alt="image" src="https://github.com/user-attachments/assets/9edef25e-fa09-477c-a205-b1e6bfd550eb" />
 
